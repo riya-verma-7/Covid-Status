@@ -1,0 +1,33 @@
+<%-include("header");-%>
+   <div class="card">
+
+       <h1>COVID-19 UPDATES </h1>
+       
+
+       <h1>
+           Country: <%=info.country%>
+        </h1>
+        <img src="<%=info.countryInfo.flag%>" alt="" srcset="">
+        <h3>
+            Total Cases: <%=info.cases %>
+        </h3>
+        <h3>
+            Total Active Cases: <%=info.active %>
+        </h3>
+        <h3>
+            Tests:<%=info.tests %>
+        </h3>
+        <h3>
+            Recovered:<%=info.recovered %>
+        </h3>
+        <h3>
+            Deaths: <%=info.deaths %>
+        </h3>
+        <h3>
+            Today Deaths: <%=info.todayDeaths %>
+        </h3>
+    <h3>
+        Total Population:  <%=info.population %>
+    </h3>
+</div>
+    <%-include("footer");-%>

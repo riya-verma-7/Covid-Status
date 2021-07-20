@@ -1,0 +1,29 @@
+<%- include("header"); -%>
+<div class="center">
+    <nav class="navbar">
+        <h1>COVID-19 STATUS</h1>
+        <form action="/" method="POST">
+        <input type="text" name="val" id="" placeholder="Enter Country" autocomplete="off">
+        
+            <button type="submit" class="btn">Search</button>
+        
+        </form>
+    </nav>
+    <div class="main">
+        <%info.forEach(function(info){%>
+        <h2>
+        <%=info.country%>
+        </h2>
+        <img src="<%=info.countryInfo.flag%>" alt="">
+        <h3>Total Cases  :<%=info.cases%>
+         </h3>
+         <h3>Total Active Cases  :<%=info.active%>
+         </h3>
+        <h3>Total Recovered Cases  :<%=info.recovered%>
+        </h3>
+         <h3>Total Deaths  :<%=info.deaths%>
+        </h3>
+         <%})%>
+    </div>
+</div>
+<%- include("footer"); -%>
