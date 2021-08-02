@@ -1,60 +1,69 @@
-.center{
+.center {
     display: block;
     margin: auto;
     padding: auto;
     text-align: center;
-
 }
-html{
-  /* background: radial-gradient(circle, #404040, #fff, #404040);
+
+html {
+    /* background: radial-gradient(circle, #404040, #fff, #404040);
     height:700px; */
-    
     /* background:-webkit-repeating-radial-gradient(top left, circle, rgba(48, 56, 255, 0.52) 5%, rgba(221, 221, 221, 0.49) 10%),repeating-linear-gradient(-45deg, rgba(253, 70, 70, 0.52) 5%, rgba(221, 221, 221, 0.49) 10%);
     height:500px; */
-    background-color:#E4E9FD; 
+    background-color: #E4E9FD;
     /* background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); */
-
 }
-
 
 .footer {
-	position: absolute;
-	text-align: center;
-	opacity: 0.6; 
-  background-color:rgba(208, 217, 255, 0.6);
-    width:100%;
+    position: absolute;
+    text-align: center;
+    opacity: 0.6;
+    background-color: rgba(208, 217, 255, 0.6);
+    width: 100%;
 }
 
+.f {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    opacity: 0.6;
+    background-color: rgba(208, 217, 255, 0.6);
+    width: 100%;
+}
 
-.card{
+.card {
     background-color: black;
-    color:blanchedalmond;
+    color: blanchedalmond;
     display: block;
     margin: auto;
     padding: auto;
     text-align: center;
 }
 
- .navbar {
-        overflow: hidden;
-        background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-        position: fixed; 
-        top: 0; 
-        width: 100%;
-        height:150px;
+.navbar {
+    overflow: hidden;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
 }
-.main {
-    margin-top: 210px; /* Add a top margin to avoid content overlay */
-  }
 
-.navbar h1{
+.main {
+    margin-top: 210px;
+    /* Add a top margin to avoid content overlay */
+}
+
+.navbar h1 {
     /* color:black; */
     text-shadow: 0 0 4px white;
     font-weight: bolder;
     padding: 5px;
     font-size: 25px;
 }
-input{
+
+input {
     padding: 15px;
     text-align: center;
     font-weight: bolder;
@@ -62,7 +71,7 @@ input{
     outline: none;
 }
 
-.btn{
+.btn {
     width: 220px;
     height: 50px;
     border: none;
@@ -81,7 +90,7 @@ input{
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -118,9 +127,22 @@ input{
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 
-
+.btntwo {
+    background-color: rgb(7, 7, 56);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
